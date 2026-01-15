@@ -25,7 +25,7 @@ public class ChartController {
         List<Integer> values = Arrays.asList(120, 200, 150, 80, 70, 110, 130);
         
         data.put("categories", categories);
-        data.put("values", values);
+        data.put("yvalue", values);
         return data; // JSON 형태로 반환됩니다.
     }
 
@@ -36,12 +36,12 @@ public class ChartController {
 
         Map<String, Object> data = new HashMap<>();
         data.put("categories", categories);
-        data.put("sales", sales);
+        data.put("yvalue", sales);
 
         return data; // JSON 형태로 반환됩니다.
     }    
 
-    @GetMapping("/api/data-list")
+    @GetMapping("/api/xy-data")
     public ResponseEntity<List<ChartData>> getItems(@RequestParam("chartIndex") String chartIndex) {
         List<ChartData> dataList = new ArrayList<>();
        	Random random = new Random();

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import DrawChart from './components/chartjs/Draw-Chartjs.vue'; // BarChart 컴포넌트 import
+import DrawChart from './components/chartjs/DrawChartjs.vue'; // BarChart 컴포넌트 import
 
 export default {
   name: 'App',

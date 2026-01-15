@@ -86,7 +86,7 @@ export default {
               {
                 name: '값',
                 type: chartTypes[idx],
-                data: data.values || []
+                data: data.yvalue || []
               }
             ]
           };

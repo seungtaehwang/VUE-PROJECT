@@ -2,9 +2,10 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import Test from './tests/HeaderTest.vue'
-import TestRes from './tests/TestRespose.vue'
-import ChartBySpring from './charts/ChartBySpring.vue'
+import Test from './tests/TestSample.vue'
+import TestRes from './tests/TestRealGrid.vue'
+import eChartBySpring from './components/echart/e-ChartBySpring.vue'
+import DrawTest from './tests/DrawTest.vue'
 
 //createApp(App).mount('#app')
-createApp(TestRes).mount('#app')
+createApp(eChartBySpring).mount('#app')
