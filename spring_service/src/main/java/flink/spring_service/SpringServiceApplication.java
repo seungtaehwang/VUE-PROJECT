@@ -1,4 +1,4 @@
-package forlink.web.spring_service;
+package flink.spring_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 class Helloworld {
         @GetMapping("/")
         public String greet() {
-                return "Hello Spring Web Service!";
+                return "Hello Spring Web Service!!!";
         }
 }
 
